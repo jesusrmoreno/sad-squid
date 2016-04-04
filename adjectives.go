@@ -1,4 +1,4 @@
-package main
+package squid
 
 var adjectives = []string{
 	"abandoned",

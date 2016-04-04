@@ -1,4 +1,5 @@
-package main
+package squid
+
 var nouns = []string{
 	"aardvarks",
 	"aardwolves",

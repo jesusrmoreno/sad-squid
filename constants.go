@@ -1,4 +1,4 @@
-package main
+package squid
 
 var verbs = []string{"ambled", "assembled", "burst", "babbled", "charged", "chewed",
 	"clamored", "coasted", "crawled", "crept", "danced", "dashed",
