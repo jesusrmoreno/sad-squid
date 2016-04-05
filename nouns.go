@@ -1,6 +1,6 @@
 package squid
 
-var nouns = []string{
+var Nouns = []string{
 	"aardvarks",
 	"aardwolves",
 	"abalones",

@@ -1,6 +1,6 @@
 package squid
 
-var adjectives = []string{
+var Adjectives = []string{
 	"abandoned",
 	"able",
 	"absolute",

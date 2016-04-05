@@ -1,7 +1,7 @@
 package squid
 
-var joiners = []string{"with", "for", "around", "on", "without"}
-var simpleSubjects = []string{
+var Joiners = []string{"with", "for", "around", "on", "without"}
+var SimpleSubjects = []string{
 	"aardvarks", "alpacas", "ants", "apes", "baboons", "badgers", "bats",
 	"bears", "beavers", "bees", "birds", "bison", "bobcats", "bullfrogs",
 	"bulls", "bunnies", "buzzards", "camels", "catfish", "cats", "cattle",
@@ -23,7 +23,7 @@ var simpleSubjects = []string{
 	"vultures", "warthogs", "whales", "wolves", "woodchucks", "yaks", "zebras",
 }
 
-var simpleAdjectives = []string{
+var SimpleAdjectives = []string{
 	"awful", "bad", "bashful", "berserk", "big", "bizarre", "black", "blue",
 	"boring", "brawny", "bright", "bumpy", "burly", "cagey", "cheerful",
 	"chilly", "chubby", "classy", "clumsy", "cold", "crazy", "creepy", "cuddly",
@@ -43,7 +43,7 @@ var simpleAdjectives = []string{
 	"wise", "yellow", "young", "zany",
 }
 
-var simpleVerbs = []string{
+var SimpleVerbs = []string{
 	"agree", "applaud", "argue", "arise", "arrive", "attack", "awaken", "bake",
 	"bathe", "beg", "behave", "bite", "blink", "blush", "bounce", "breathe",
 	"burrow", "buzz", "charge", "chat", "cheer", "chuckle", "chew", "clap",
@@ -62,7 +62,7 @@ var simpleVerbs = []string{
 	"whisper", "work", "wriggle",
 }
 
-var simpleAdverbs = []string{
+var SimpleAdverbs = []string{
 	"ably", "always", "angrily", "badly", "blindly", "boldly", "bravely",
 	"briefly", "brightly", "busily", "calmly", "clearly", "cruelly", "daily",
 	"easily", "equally", "exactly", "fast", "fiercely", "fondly", "gently",
@@ -74,7 +74,7 @@ var simpleAdverbs = []string{
 	"swiftly", "tensely", "tightly", "too", "warmly", "weakly", "well",
 	"wildly", "yearly",
 }
-var verbs = []string{"ambled", "assembled", "burst", "babbled", "charged", "chewed",
+var Verbs = []string{"ambled", "assembled", "burst", "babbled", "charged", "chewed",
 	"clamored", "coasted", "crawled", "crept", "danced", "dashed",
 	"drove", "flopped", "galloped", "gathered", "glided", "hobbled",
 	"hopped", "hurried", "hustled", "jogged", "juggled", "jumped",
@@ -86,7 +86,7 @@ var verbs = []string{"ambled", "assembled", "burst", "babbled", "charged", "chew
 	"tumbled", "twisted", "wade", "wandered", "whistled", "wiggled",
 	"wobbled", "yawned", "zipped", "zoomed"}
 
-var adverbs = []string{"absentmindedly", "adventurously", "angrily", "anxiously",
+var Adverbs = []string{"absentmindedly", "adventurously", "angrily", "anxiously",
 	"awkwardly", "bashfully", "beautifully", "bleakly", "blissfully",
 	"boastfully", "boldly", "bravely", "briskly", "calmly",
 	"carefully", "cautiously", "cheerfully", "cleverly", "cluelessly",
