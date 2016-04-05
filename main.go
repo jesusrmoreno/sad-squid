@@ -42,14 +42,29 @@ func randomItem(list []string) string {
 	return list[random.Intn(len(list))]
 }
 
-// GenerateID generates a new Asana style ID
+// GenerateID generates a new complex asana style ID
 func GenerateID() string {
 	count := random.Intn(1000) + 2
 	firstAdjective := randomItem(adjectives)
-	secondAdjective := randomItem(adjectives)
-	noun := randomItem(nouns)
+	noun := randomItem(simpleSubjects)
 	verb := randomItem(verbs)
 	adverb := randomItem(adverbs)
-	return fmt.Sprintf("%d-%s-%s-%s-%s-%s",
-		count, firstAdjective, secondAdjective, noun, verb, adverb)
+	secondAdjective := randomItem(adjectives)
+	secondNoun := randomItem(simpleSubjects)
+	joiner := randomItem(joiners)
+	// adj-noun-verb-adverb-with-adj-noun
+	// 210 - dizzy - hounds - yawned - knavishly
+	return fmt.Sprintf("%d-%s-%s-%s-%s-%s-%s-%s", count,
+		firstAdjective, noun, verb, adverb, joiner, secondAdjective, secondNoun)
+}
+
+// GenerateSimpleID generates a new simple Asana style ID
+func GenerateSimpleID() string {
+	count := random.Intn(1000) + 2
+	adj := randomItem(adjectives)
+	noun := randomItem(simpleSubjects)
+	verb := randomItem(verbs)
+	adverb := randomItem(adverbs)
+	return fmt.Sprintf("%d-%s-%s-%s-%s",
+		count, adj, noun, verb, adverb)
 }
